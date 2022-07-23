@@ -24,12 +24,11 @@ function addItem (e){
     li.appendChild(deleteBtn);
     
     itemList.append(li);
-    let outputValue = document.getElementById('item')
-    outputValue.value = "";
+    // let outputValue = document.getElementById('item')
+    // outputValue.value = "";
 
-
-   
-      
+    let outputValue = document.getElementById('addForm');
+    outputValue.reset();    
 }
 
 function removeItem(e){
