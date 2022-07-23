@@ -12,7 +12,7 @@ function addItem (e){
     
 
     li.append(displayValue);
-
+    
     var deleteBtn = document.createElement('button')
 
 
@@ -24,12 +24,13 @@ function addItem (e){
     li.appendChild(deleteBtn);
     
     itemList.append(li);
+    let outputValue = document.getElementById('item')
+    outputValue.value = "";
 
-    
-  
+
+   
+      
 }
-
-
 
 function removeItem(e){
     if(e.target.classList.contains('delete')){
@@ -39,7 +40,4 @@ function removeItem(e){
             itemList.removeChild(li);
         }
     }
-
-   
-
 }
